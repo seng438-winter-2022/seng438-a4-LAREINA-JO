@@ -2,12 +2,12 @@
 
 **Lab. Report \#4 – Mutation Testing and Web app testing**
 
-| Group \#:       |   |
+| Group \#:       | 9  |
 |-----------------|---|
-| Student Names:  |   |
-|                 |   |
-|                 |   |
-|                 |   |
+| Student Names:  | Brian Chen  |
+|                 | Zheng Chen  |
+|                 | Rui Guan  |
+|                 | Weitao Wu  |
 
 # Introduction
 
@@ -15,6 +15,10 @@
 # Analysis of 10 Mutants of the Range class 
 
 # Report all the statistics and the mutation score for each test class
+
+DataUtilityTest:
+
+![WechatIMG1797](https://user-images.githubusercontent.com/74373450/158275924-0d96efa5-82b5-460e-b025-4a5881a96710.jpeg)
 
 
 
