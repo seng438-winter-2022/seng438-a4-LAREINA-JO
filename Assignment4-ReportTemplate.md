@@ -47,6 +47,14 @@ Disavantages: Using mutant testing takes a lot of time and CPU of our computers.
 
 # Explain your SELENUIM test case design process
 
+We chose 8 functionalities (2 per member) from the BestBuy.ca/en-ca website
+
+Best Buy:
+
+Search: this was tested by using and valid search item and an invalid search item to see if we could achieve the expected results
+
+Sort By: this was tested by searching a valid item, then creating test cases to see if each sort option achieved the expected results
+
 # Explain the use of assertions and checkpoints
 
 # how did you test each functionaity with different test data
