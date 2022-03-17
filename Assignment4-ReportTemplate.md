@@ -59,7 +59,13 @@ Edit Personal File:
 
 Add Items to Cart:
 
+Sign in: this was tested by using the valid email and password and also the invalid email and password. If successfully sign in, the test will check if there is a greeting sentence for the account holder. If fail to sign in, the test will check if there is an error message.
+
+create account: this was tested by using the name, email, and password to see if the account can be created.
+
 # Explain the use of assertions and checkpoints
+
+The use of assertions and checkpoints is to check if the test works as expected. They help the testers understand if tests have passed or failed. For example, we add the assert text at the end of failed sign in test. It can help us check if the error message shows up and understand if the test meets our expectations.
 
 # how did you test each functionaity with different test data
 
