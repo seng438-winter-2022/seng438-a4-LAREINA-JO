@@ -55,6 +55,10 @@ Search: this was tested by using and valid search item and an invalid search ite
 
 Sort By: this was tested by searching a valid item, then creating test cases to see if each sort option achieved the expected results
 
+Edit Personal File:
+
+Add Items to Cart:
+
 # Explain the use of assertions and checkpoints
 
 # how did you test each functionaity with different test data
