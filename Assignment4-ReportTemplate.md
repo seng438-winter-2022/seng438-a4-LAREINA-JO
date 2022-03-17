@@ -2,17 +2,16 @@
 
 **Lab. Report \#4 – Mutation Testing and Web app testing**
 
-| Group \#:       | 9  |
-|-----------------|---|
-| Student Names:  | Brian Chen  |
-|                 | Zheng Chen  |
-|                 | Rui Guan  |
-|                 | Weitao Wu  |
+| Group \#:      | 9          |
+| -------------- | ---------- |
+| Student Names: | Brian Chen |
+|                | Zheng Chen |
+|                | Rui Guan   |
+|                | Weitao Wu  |
 
 # Introduction
 
-
-# Analysis of 10 Mutants of the Range class 
+# Analysis of 10 Mutants of the Range class
 
 # Report all the statistics and the mutation score for each test class
 
@@ -20,13 +19,16 @@ DataUtilityTest:
 
 ![WechatIMG1797](https://user-images.githubusercontent.com/74373450/158275924-0d96efa5-82b5-460e-b025-4a5881a96710.jpeg)
 
-
+RangeTest:
+![](./media/A3RangeTest.png)
+After Mutants Killing:
+![](./media/A4RangeTest.PNG)
 
 # Analysis drawn on the effectiveness of each of the test classes
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
-Equivalent mutants are functionally identical to the original class although syntactically different. Their exsitence does not mean that there are some functionalities of classes that we have not tested. The way to detect the equivalent mutants is to check if the mutant does the same functionality as the original class does. The comparison statement can easily generate the equivalent mutants. For example, "!=" can generate mutants of "less or equal" and "greater or equal". "Return true" can be replaced by "return -1". 
+Equivalent mutants are functionally identical to the original class although syntactically different. Their exsitence does not mean that there are some functionalities of classes that we have not tested. The way to detect the equivalent mutants is to check if the mutant does the same functionality as the original class does. The comparison statement can easily generate the equivalent mutants. For example, "!=" can generate mutants of "less or equal" and "greater or equal". "Return true" can be replaced by "return -1".
 
 Benefits: Equivalent mutants cannot simulate bugs. Finding the equivalent mutants can make us focus more on the non-equivalent mutants which are significant to help us find the errors and bugs.
 
@@ -34,16 +36,15 @@ Disavantages:They will decrease the accuracy of mutation score because there mig
 
 # A discussion of what could have been done to improve the mutation score of the test suites
 
-
 DataUtilityTest:
 
 In the original test file, the test cases had 92% mutation coverage. According to the pitest report, the mutants that were not killed by the test cases were equivalent mutants except two mutants. These two mutants are both "removed call to org/jfree/chart/util/ParamChecks::nullNotPermitted", which are unacceptable. They mean that the null parameters are not tested in our previous test cases. Therefore, adding two new test cases: testNullValue2DcalculateRowTotal() and testNullKeyedValueGetCumulativePercentages() can help kill those two mutants. Since the rest mutants were equivalent mutants and could not be killed, the mutant score will remain 92%.
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 
-Advantages: Mutant testing can help us detect more bugs and error from the code. Plus, it can help us increase the coverage of our tests. After mutant testing, we can get a more stable and realiable system. 
+Advantages: Mutant testing can help us detect more bugs and error from the code. Plus, it can help us increase the coverage of our tests. After mutant testing, we can get a more stable and realiable system.
 
-Disavantages: Using mutant testing takes a lot of time and CPU of our computers. Some mutants are too complex for us to find a bug. 
+Disavantages: Using mutant testing takes a lot of time and CPU of our computers. Some mutants are too complex for us to find a bug.
 
 # Explain your SELENUIM test case design process
 
@@ -65,7 +66,7 @@ create account: this was tested by using the name, email, and password to see if
 
 # Explain the use of assertions and checkpoints
 
-The use of assertions and checkpoints is to check if the test works as expected. They help the testers understand if tests have passed or failed. 
+The use of assertions and checkpoints is to check if the test works as expected. They help the testers understand if tests have passed or failed.
 
 Failed Sign In with Invalid Email/Password: add the assert text at the end of failed sign in test. It can help us check if the error message shows up and understand if the test meets our expectations.
 
@@ -78,7 +79,6 @@ CreateAccount: After creating the account, the web will direct to the account ho
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
 # How the team work/effort was divided and managed
-
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
