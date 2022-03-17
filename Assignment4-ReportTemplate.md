@@ -26,7 +26,7 @@ The purpose of adding (5.4, 6.3) test case is to make incremented b0 value ( 5.4
 
 The purpose of adding (5.6, 5.7) test case is to make decremented b0 value ( 5.6-- and --5.6 to 4.6) be able to pass upper value ( 4.6<5.5 ) at line 161.
 
-For Range.java line 157 ( shiftWithNoZeroCrossing(double, double) )
+For Range.java line 387 ( shiftWithNoZeroCrossing(double, double) )
 
 ![](./media/Range2.PNG) ![](./media/Range2'.PNG)
 
