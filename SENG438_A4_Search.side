@@ -1,0 +1,141 @@
+{
+  "id": "eeffc627-e338-4102-83f3-5c6d638ffa57",
+  "version": "2.0",
+  "name": "SENG438_A4_Search",
+  "url": "https://www.bestbuy.ca",
+  "tests": [{
+    "id": "740a7f3a-00c0-448c-8289-a4f64f11fb84",
+    "name": "SearchIncludedItem",
+    "commands": [{
+      "id": "8133b9f2-0ae0-4577-82a0-2951258fb075",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bestbuy.ca/en-ca",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41fda769-89f1-4242-a8a3-cb911bd3e305",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.textField_XaJoz", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[4]/header/div/div/div[2]/div/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dba1c438-603e-4e18-859c-4181fc66caf6",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.textField_XaJoz", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[4]/header/div/div/div[2]/div/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "omen laptop"
+    }, {
+      "id": "1802c576-c2f1-4a8b-a0ea-4236244abbe1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.textField_XaJoz", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[4]/header/div/div/div[2]/div/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "10a9f231-bbbe-421d-b45f-82da0a09acd2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.breadcrumb_iafPH > li:nth-child(2)",
+      "targets": [
+        ["css=.breadcrumb_iafPH > li:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/main/div/div/ol/li[2]", "xpath:idRelative"],
+        ["xpath=//ol/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Search for \"omen laptop\"')]", "xpath:innerText"]
+      ],
+      "value": "Search for \"omen laptop\""
+    }]
+  }, {
+    "id": "76805ee9-6611-4964-b798-d946a066e545",
+    "name": "SeachNotIncludedItem",
+    "commands": [{
+      "id": "b1f43937-d466-47c2-b44f-c6bc0dea7a7b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bestbuy.ca/en-ca",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ea7c793-294b-4a65-832c-d4330c2d6f3d",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.textField_XaJoz", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[4]/header/div/div/div[2]/div/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bac23975-bfdb-4400-b964-ad557f7a7013",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.textField_XaJoz", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[4]/header/div/div/div[2]/div/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "541158123"
+    }, {
+      "id": "217c13c9-1a77-4f21-b67f-207ca956e5a9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.textField_XaJoz", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[4]/header/div/div/div[2]/div/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "90487fbd-bddc-4cbe-9a0d-2be80536e9d8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/main/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sorry, we couldn’t find anything for \"541158123\"')]", "xpath:innerText"]
+      ],
+      "value": "Sorry, we couldn’t find anything for \"541158123\""
+    }]
+  }],
+  "suites": [{
+    "id": "eba93293-0bb9-48a8-9cc1-437985afc219",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.bestbuy.ca/"],
+  "plugins": []
+}
