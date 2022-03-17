@@ -1,0 +1,156 @@
+{
+  "id": "644cf4bf-3197-4c6b-b4fb-6a256b891293",
+  "version": "2.0",
+  "name": "brandTest",
+  "url": "https://www.bestbuy.ca",
+  "tests": [{
+    "id": "583a3302-5865-430c-9093-b5b4838eb22f",
+    "name": "ChoosePopularBrandDysonTest",
+    "commands": [{
+      "id": "ce9d2f14-867e-41e0-8d0f-4cbc25627dc0",
+      "comment": "",
+      "command": "open",
+      "target": "/en-ca",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5861f6b3-1eb2-4bc5-a2c9-2d9f83508c41",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14af96c4-1dfa-4ee2-b119-27afd70ef777",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=li:nth-child(2) button > .white_2VxdF",
+      "targets": [
+        ["css=li:nth-child(2) button > .white_2VxdF", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0b86069-0b5a-45a2-9044-99c495ad56d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) button > .white_2VxdF",
+      "targets": [
+        ["css=li:nth-child(2) button > .white_2VxdF", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d5e7a30-a820-4f99-a9cb-a49289928471",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.activeButton_2iIS_ > .white_2VxdF",
+      "targets": [
+        ["css=.activeButton_2iIS_ > .white_2VxdF", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a43c0ccd-0cc3-447c-8257-841a3f50ce5e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dyson",
+      "targets": [
+        ["linkText=Dyson", "linkText"],
+        ["css=.visible_2kiOM li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Dyson')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[4]/header/div/div/div[2]/div/div/div/div/div/ul/li[2]/div/div[2]/div/div/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en-ca/brand/dyson')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dyson')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c992cea-2f1d-412d-988a-01c7dbeaa7da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title_3A6Uh",
+      "targets": [
+        ["css=.title_3A6Uh", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/div/div/main/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Dyson')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6474ac5d-9e3d-4b1d-9f3f-6942b854cf5a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.title_3A6Uh",
+      "targets": [],
+      "value": "Dyson"
+    }]
+  }, {
+    "id": "d4113a00-6483-42dd-8c00-49c718191e1f",
+    "name": "ChooseBrandWithFirstLetterAppleTest",
+    "commands": [{
+      "id": "c6cf2ea8-7332-4190-a1b5-829b07f9f859",
+      "comment": "",
+      "command": "open",
+      "target": "/en-ca",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea2c6ab4-8d57-4dca-9e7c-7efed47107db",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d76c6b58-dc4e-4946-a913-bc1ea8e1954f",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) button > .white_2VxdF",
+      "targets": [
+        ["css=li:nth-child(2) button > .white_2VxdF", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1238662-d368-4fce-a982-f6864532db4e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Apple",
+      "targets": [
+        ["linkText=Apple", "linkText"],
+        ["css=.visible_2kiOM li:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Apple')])[6]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[4]/header/div/div/div[2]/div/div/div/div/div/ul/li[2]/div/div[2]/div/div[2]/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/en-ca/brand/apple')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div[2]/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf19b870-d8e2-421a-bd83-6665a4e04b13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title_3A6Uh",
+      "targets": [
+        ["css=.title_3A6Uh", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/div/div/main/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Apple')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "523d38bf-da48-4ccc-9e5b-0380bbb73d6a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.title_3A6Uh",
+      "targets": [],
+      "value": "Apple"
+    }]
+  }],
+  "suites": [{
+    "id": "7a965b10-3943-4fe1-a0c1-35be4fb522d2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["583a3302-5865-430c-9093-b5b4838eb22f"]
+  }],
+  "urls": ["https://www.bestbuy.ca/"],
+  "plugins": []
+}
