@@ -53,6 +53,8 @@ After Mutants Killing:
 
 The modified RangeTest now provide 80% mutarion coverage as it used to have a 68% coverage. The test case for Range class now have a high effectiveness since the survived mutants are mostly equavalent mutants or senseless to kill ( such as a++, a-- for the return value ). The test suite now has a higher effectiveness on boundary value testing since most mutants killed are from variable replacement mutation.
 
+The original DataUtilityTest had 92% of mutation coverage which means that it had a high effectiveness. Based on the study on the pitest report, most of the remained suvived mutants are equivalent mutants. After modifying the test, the score still remains 92% because the equivalent mutants cannot be killed.
+
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
 Equivalent mutants are functionally identical to the original class although syntactically different. Their exsitence does not mean that there are some functionalities of classes that we have not tested. The way to detect the equivalent mutants is to check if the mutant does the same functionality as the original class does. The comparison statement can easily generate the equivalent mutants. For example, "!=" can generate mutants of "less or equal" and "greater or equal". "Return true" can be replaced by "return -1".
