@@ -67,6 +67,9 @@ DataUtilityTest:
 
 In the original test file, the test cases had 92% mutation coverage. According to the pitest report, the mutants that were not killed by the test cases were equivalent mutants except two mutants. These two mutants are both "removed call to org/jfree/chart/util/ParamChecks::nullNotPermitted", which are unacceptable. They mean that the null parameters are not tested in our previous test cases. Therefore, adding two new test cases: testNullValue2DcalculateRowTotal() and testNullKeyedValueGetCumulativePercentages() can help kill those two mutants. Since the rest mutants were equivalent mutants and could not be killed, the mutant score will remain 92%.
 
+RangeTest:
+According to the pitest report, the non-equavalent mutants are mostly from variable replacement (intersects, shiftWithNoZeroCrossing, min, max, etc) and uncovered functionality testing (hashcode). In order to kill variable replacement mutants, adding boundary value testing is highly effective as described above. Those mutant will be killed since they can no longer pass the new added test cases. For the hashcode, the previous test case compares two Range classes' hashcode that the mutants can survive since it compares both 'wrong' results. In our new added test case, the hashcode() output is compared with an actual result that the mutants of replacing variables and operators will be killed. The mutation score increase 12% from 68% to 80%.
+
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 
 Advantages: Mutant testing can help us detect more bugs and error from the code. Plus, it can help us increase the coverage of our tests. After mutant testing, we can get a more stable and realiable system.
