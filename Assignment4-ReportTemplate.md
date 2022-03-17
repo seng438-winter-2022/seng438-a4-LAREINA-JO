@@ -33,8 +33,7 @@ For Range.java line 387 ( shiftWithNoZeroCrossing(double, double) )
 Mutant at line 4, 7, 8, 9, 10 are killed by the two added tests:
 ![](./media/Range2killTest.PNG)
 
-The purpose of adding Range(0.5, 10) and Range(-0.5, 10) is to make test cases fail when 0.0 value is substitu
-ted with 1.0 or -1.0 because 0.5 and -0.5 are not able to pass the new value. Since this method is not able to cross zero, mutant at line 4 will be killed by two added tests because if condition is replaced by 'False', the output will cross the zero.
+The purpose of adding Range(0.5, 10) and Range(-0.5, 10) is to make test cases fail when 0.0 value is substituted with 1.0 or -1.0 because 0.5 and -0.5 are not able to pass the new value. Since this method is not able to cross zero, mutant at line 4 will be killed by two added tests because if condition is replaced by 'False', the output will cross the zero.
 
 # Report all the statistics and the mutation score for each test class
 
