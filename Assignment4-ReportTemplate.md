@@ -71,7 +71,7 @@ Failed Sign In with Invalid Email/Password: add the assert text at the end of fa
 
 Valid Sign In: add the assert text at the end of sign in test. As we correctly signed in, the web page will direct to the account page with a greeting message. Checking if there is a greeting message can help us check if the account page shows up and understand if the test meets our expectations.
 
-CreateAccount: Since each email can only create one account, after creating the account, the web will direct to the sign in page. Therefore, in the test, we don't need any checkpoints.
+CreateAccount: After creating the account, the web will direct to the account home page. However, in the test, we don't need any checkpoints because we cannot repeat the test since the account has been created.
 
 # how did you test each functionaity with different test data
 
