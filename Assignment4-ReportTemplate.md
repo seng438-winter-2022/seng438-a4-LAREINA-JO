@@ -13,6 +13,25 @@
 
 # Analysis of 10 Mutants of the Range class
 
+For Range.java line 157 ( intersects(double, double) )
+![](./media/Range1.PNG) ![](./media/Range1'.PNG)
+
+Mutant at line 12, 13, 14，16, 17, 18 are killed by the three added tests:
+![](./media/Range1killTest.PNG)
+
+The purpose of adding (1.1, 1.2) test case is to make b0 and b1 not be able to pass incremented lower value ( 1.1++ and ++1.1 to 2.1) at line 157 and 158 ( 1.1<2.1 and 1.2<2.1 ).
+The purpose of adding (5.4, 6.3) test case is to make incremented b0 value ( 5.4++ and ++5.4 to 6.4) not be able to pass upper value ( 6.4>5.5 ) at line 157 and 158.
+The purpose of adding (5.6, 5.7) test case is to make decremented b0 value ( 5.6-- and --5.6 to 4.6) be able to pass upper value ( 4.6<5.5 ) at line 161.
+
+For Range.java line 157 ( shiftWithNoZeroCrossing(double, double) )
+![](./media/Range2.PNG) ![](./media/Range2'.PNG)
+
+Mutant at line 4, 7, 8, 9, 10 are killed by the two added tests:
+![](./media/Range2killTest.PNG)
+
+The purpose of adding Range(0.5, 10) and Range(-0.5, 10) is to make test cases fail when 0.0 value is substitu
+ted with 1.0 or -1.0 because 0.5 and -0.5 are not able to pass the new value. Since this method is not able to cross zero, mutant at line 4 will be killed by two added tests because if condition is replaced by 'False', the output will cross the zero.
+
 # Report all the statistics and the mutation score for each test class
 
 DataUtilityTest:
