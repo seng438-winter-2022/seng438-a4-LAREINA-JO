@@ -118,6 +118,12 @@ CreateAccount: After creating the account, the web will direct to the account ho
 
 Choose Brand: After choosing a brand, the web will direct to the brand page with the brand name. Using the assert text to check if the brand name matches the brand that we choose for testing.
 
+Filter: After selecting the filter, it will present a lable on the product page. Using "assert element on present" to check if the present lable is the same as what you selected.
+
+Edit Personal Info: After editing info successfully, it will have an alert. If editing failed, it will have an error message. Using "assert text" to check if the text is "edit successfully" or "something error".
+
+Add Item into Cart: After adding item into cart successfully, it will have an alert. If not, it will have an error message. Using "assert text" to check if the text is "add successfully" or "something error".
+
 # how did you test each functionaity with different test data
 
 Sign In: We designed to test sign in functionality in two ways with correct account and wrong email/password. First, test sign in with the correct email and password. Then, test sign in with wrong email/password to see if we could sign in successfully.
@@ -125,6 +131,12 @@ Sign In: We designed to test sign in functionality in two ways with correct acco
 createAccount: Even though we use an inexistent email to create account, the account will still be created. Therefore, we designed to test create account functionality with name, email, and password to see if the account can be created.
 
 Choose brand: We can choose brands in two ways on BestBuy website: choose the popular brand and choose brand based on the first letter of the brand name. Therefore, the test will test in these two ways.
+
+Filter: We can try to select element in different list. Every kind of selection is one test case. And we also made a test case for the multiple choices in different list.
+
+Edit personal info: We made test cases for every different information: one test case for the name editing; for the email editing, there are both valid and invalid input; for the password, there is another test case for the different confirm password.
+
+Add item into cart: We made two test case: one for the item with single version, and one for the item with multiple version. The multiple verison item needs to be selected the property you would like. 
 
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
