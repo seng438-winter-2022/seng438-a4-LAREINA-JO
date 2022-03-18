@@ -104,6 +104,12 @@ Choose Brand: this was tested by choosing a brand to see if the correct brand pa
 
 The use of assertions and checkpoints is to check if the test works as expected. They help the testers understand if tests have passed or failed.
 
+Search Invalid: assert text was used to check if the unknown product page would be displayed given an invalid query, and in this case we would be expecting "Sorry, we couldn't find anything for"
+
+Search valid: assert text was used again but this time to check if the headphones products page was displayed by checking for the word "Headphones" in the title
+
+Sort by: since the sort options came from a drop down menu, we used verify element present and then checked for each specific value of either "Price Low-High", "Price High-Low", "Best Match", or "Highest Rated" to see if that specific option in the drop down menu was selected. 
+
 Failed Sign In with Invalid Email/Password: add the assert text at the end of failed sign in test. It can help us check if the error message shows up and understand if the test meets our expectations.
 
 Valid Sign In: add the assert text at the end of sign in test. As we correctly signed in, the web page will direct to the account page with a greeting message. Checking if there is a greeting message can help us check if the account page shows up and understand if the test meets our expectations.
