@@ -96,6 +96,8 @@ Sign in: this was tested by using the valid email and password and also the inva
 
 create account: this was tested by using the name, email, and password to see if the account can be created.
 
+Choose Brand: this was tested by choosing a brand to see if the correct brand page shows up. Since this functionality couldn't fail, the test was designed to test in two ways: choose a popular brand and choose a brand with its first letter of its name.
+
 # Explain the use of assertions and checkpoints
 
 The use of assertions and checkpoints is to check if the test works as expected. They help the testers understand if tests have passed or failed.
@@ -106,9 +108,29 @@ Valid Sign In: add the assert text at the end of sign in test. As we correctly s
 
 CreateAccount: After creating the account, the web will direct to the account home page. However, in the test, we don't need any checkpoints because we cannot repeat the test since the account has been created.
 
+Choose Brand: After choosing a brand, the web will direct to the brand page with the brand name. Using the assert text to check if the brand name matches the brand that we choose for testing.
+
 # how did you test each functionaity with different test data
 
+Sign In: We designed to test sign in functionality in two ways with correct account and wrong email/password. First, test sign in with the correct email and password. Then, test sign in with wrong email/password to see if we could sign in successfully.
+
+createAccount: Even though we use an inexistent email to create account, the account will still be created. Therefore, we designed to test create account functionality with name, email, and password to see if the account can be created.
+
+Choose brand: We can choose brands in two ways on BestBuy website: choose the popular brand and choose brand based on the first letter of the brand name. Therefore, the test will test in these two ways.
+
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
+
+Selenium: 
+
+Advantages: open source software, support different systems and different browers, help testers easily test the GUI, support different programming language
+
+Disadvantages: only supports web based application and does not support windows based application, difficult to test image based application
+
+Sikulix:
+
+Advantages: open source, has library functions like click, find and the input parameters are Images, can automate the GUI using screenshots
+
+Disadvantages: scripting is platform dependent, resolution dependent, can only run mutiple scripts one by one
 
 # How the team work/effort was divided and managed
 
