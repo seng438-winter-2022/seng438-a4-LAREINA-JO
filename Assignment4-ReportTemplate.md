@@ -88,9 +88,11 @@ Search: this was tested by using and valid search item and an invalid search ite
 
 Sort By: this was tested by searching a valid item, then creating test cases to see if each sort option achieved the expected results
 
-Edit Personal File:
+Edit Personal File: this was tested by user name changing, valid email address changing, invalid email address changing, same email input, valid password changing, invalid password changing, same password input, wrong confirm password. If successfully change the personal information, the test will check if there is an alert for the account holder. If fail to edit, the test will check if there is an error message.
 
-Add Items to Cart:
+Add Items to Cart: this was tested by items with single version and multiple versions. If successfully add into the cart, the test will check if there is an alert for the account holder. If fail to add, the test will check if there is an error message. 
+
+Filter: this was tested by properties selected by customers, such as selecting availibility, selecting current offer, selecting customer rating, selecting discount, selecting valid price, selecting invalid price, selecting sellers, selecting status, and making multiple selections. If successfully make selection, the test will check if there is a bubble shown on the product page. If fail to select, the test will check if there is an error message.
 
 Sign in: this was tested by using the valid email and password and also the invalid email and password. If successfully sign in, the test will check if there is a greeting sentence for the account holder. If fail to sign in, the test will check if there is an error message.
 
