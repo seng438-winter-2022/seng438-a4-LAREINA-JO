@@ -90,7 +90,7 @@ Sort By: this was tested by searching a valid item, then creating test cases to 
 
 Edit Personal File: this was tested by user name changing, valid email address changing, invalid email address changing, same email input, valid password changing, invalid password changing, same password input, wrong confirm password. If successfully change the personal information, the test will check if there is an alert for the account holder. If fail to edit, the test will check if there is an error message.
 
-Add Items to Cart: this was tested by items with single version and multiple versions. If successfully add into the cart, the test will check if there is an alert for the account holder. If fail to add, the test will check if there is an error message. 
+Add Items to Cart: this was tested by items with single version and multiple versions. If successfully add into the cart, the test will check if there is an alert for the account holder. If fail to add, the test will check if there is an error message.
 
 Filter: this was tested by properties selected by customers, such as selecting availibility, selecting current offer, selecting customer rating, selecting discount, selecting valid price, selecting invalid price, selecting sellers, selecting status, and making multiple selections. If successfully make selection, the test will check if there is a bubble shown on the product page. If fail to select, the test will check if there is an error message.
 
@@ -108,7 +108,7 @@ Search Invalid: assert text was used to check if the unknown product page would 
 
 Search valid: assert text was used again but this time to check if the headphones products page was displayed by checking for the word "Headphones" in the title
 
-Sort by: since the sort options came from a drop down menu, we used verify element present and then checked for each specific value of either "Price Low-High", "Price High-Low", "Best Match", or "Highest Rated" to see if that specific option in the drop down menu was selected. 
+Sort by: since the sort options came from a drop down menu, we used verify element present and then checked for each specific value of either "Price Low-High", "Price High-Low", "Best Match", or "Highest Rated" to see if that specific option in the drop down menu was selected.
 
 Failed Sign In with Invalid Email/Password: add the assert text at the end of failed sign in test. It can help us check if the error message shows up and understand if the test meets our expectations.
 
@@ -136,14 +136,15 @@ Filter: We can try to select element in different list. Every kind of selection 
 
 Edit personal info: We made test cases for every different information: one test case for the name editing; for the email editing, there are both valid and invalid input; for the password, there is another test case for the different confirm password.
 
-Add item into cart: We made two test case: one for the item with single version, and one for the item with multiple version. The multiple verison item needs to be selected the property you would like. 
+Add item into cart: We made two test case: one for the item with single version, and one for the item with multiple version. The multiple verison item needs to be selected the property you would like.
 
 Search: We designed the search functionality tests by making sure that a valid search option could be tested as well as a invalid search query and by doing so, covering essentially the two main results that could appear.
 
 Sort By: We designed the Sort functionality tests to include all options that could appear when selecting one of the options from the drop down Sort menu. By doing so, this would cover each option and response the webpage could offer when automating the tests.
+
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
-Selenium: 
+Selenium:
 
 Advantages: open source software, support different systems and different browers, help testers easily test the GUI, support different programming language
 
@@ -161,8 +162,10 @@ For Part I, Brian and Weitao worked on developing the test cases to in crease th
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
+The pit mutation testing on eclipse has a long running and report generating time, thus, we had a long time to verify our new added test cases. Pit Mutation also has a large CPU usage while running. The generated report need sometime to understand its naming (the report uses variable 1,2,3 etc.) and mutation's impact on the method. Mutation testing tells us another aspect of test cases improvement and lead us better understanding on fault-based testing.
 
+It is a little bit confusing at first using Selenium but the instructions from lecture notes are clear and helpful to follow. The script sometimes get stuck due to Chrome or Internet problem but all our test cases run normally at last. GUI testing experience from this lab is able to be carried to other courses' testing.
 
 # Comments/feedback on the lab itself
 
-The lab provided a great chance for us to practise the use of mutation test and GUI testing. The lab overall is great. 
+The lab provided a great chance for us to practise the use of mutation test and GUI testing. The lab overall is great.
