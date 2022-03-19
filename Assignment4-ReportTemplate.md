@@ -157,6 +157,12 @@ Disadvantages: scripting is platform dependent, resolution dependent, can only r
 
 # How the team work/effort was divided and managed
 
+For Part I, Brian and Weitao worked on developing the test cases to in crease the mutation score for DataUtility class, Rui and Zheng worked on the Range class. For part II, each group member worked on two functionalities of the Best Buy web page.
+
 # Difficulties encountered, challenges overcome, and lessons learned
 
+
+
 # Comments/feedback on the lab itself
+
+The lab provided a great chance for us to practise the use of mutation test and GUI testing. The lab overall is great. 
