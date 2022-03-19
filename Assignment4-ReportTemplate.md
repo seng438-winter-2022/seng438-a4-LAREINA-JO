@@ -138,6 +138,9 @@ Edit personal info: We made test cases for every different information: one test
 
 Add item into cart: We made two test case: one for the item with single version, and one for the item with multiple version. The multiple verison item needs to be selected the property you would like. 
 
+Search: We designed the search functionality tests by making sure that a valid search option could be tested as well as a invalid search query and by doing so, covering essentially the two main results that could appear.
+
+Sort By: We designed the Sort functionality tests to include all options that could appear when selecting one of the options from the drop down Sort menu. By doing so, this would cover each option and response the webpage could offer when automating the tests.
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
 Selenium: 
